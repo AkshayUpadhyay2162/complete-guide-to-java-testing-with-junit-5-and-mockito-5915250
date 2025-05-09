@@ -11,7 +11,13 @@ public class CalculatorTest {
   // Test Add
   @Test
   public void addition() {
-    int result = underTest.add(2, 3);
-    assertEquals(5, result);
+    int result = underTest.add(10, 3);
+    assertEquals(13, result);
+  }
+
+  @Test
+  public void multiplication(){
+    int res = underTest.multiply(3, 6);
+    assertEquals(18, res);
   }
 }
